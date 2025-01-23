@@ -1,0 +1,22 @@
+.sidebar-options {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  height: 50px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.category-text {
+  font-size: 15px;
+}
+
+.dropdown-menu {
+  z-index: 1000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}

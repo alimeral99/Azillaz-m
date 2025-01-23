@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.app-bodyContainer {
+  display: flex;
+}
+
+.app-bodyLeft {
+  width: 20%;
+}
+
+.app-bodyRight {
+  width: 1060px;
+  margin: 10px 0;
+  margin-left: 25px;
+}

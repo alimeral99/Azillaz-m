@@ -1,0 +1,23 @@
+.categories {
+  height: 70px;
+  overflow: hidden;
+}
+
+.slick-slide {
+  margin: 0 5px;
+}
+
+.button {
+  padding: 10px 25px;
+  background-color: #d0d0d5;
+  width: 100%;
+  color: #333;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: black;
+}

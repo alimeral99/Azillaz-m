@@ -1,0 +1,78 @@
+.navbar {
+  background-color: #004d7f;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+
+.navbar .search-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  width: 40%;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.navbar .search-container input {
+  border: 1px solid #ccc;
+  padding: 14px;
+  flex: 1;
+  height: 40px;
+  outline: none;
+  border-radius: 0 4px 0px 4;
+  font-size: 14px;
+}
+
+.navbar .search-container button {
+  background-color: #ffa500;
+  padding: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  height: 40px;
+  color: white;
+  width: 50px;
+  font-size: 14px;
+}
+
+.navbar .search-container button:hover {
+  background-color: #0d6efd;
+  transition: ease-in;
+}
+
+.icons {
+  font-size: 18px;
+}
+
+.modal-container {
+  padding: 7px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+
+.navbar-right button {
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar-right > .register-loginBtn {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  color: #e5e5e5;
+}
+
+.navbar-right > .register-loginBtn:hover {
+  background-color: #f0f0f0;
+  color: black;
+}

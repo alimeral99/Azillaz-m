@@ -1,0 +1,55 @@
+.popular-location {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+  height: 100px;
+}
+.popular-locationContainer {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-5%);
+  background-color: #ffff;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: -5px;
+}
+
+.next .icons {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.prev .icons {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.popular-locationText {
+  font-size: 23px;
+}
+
+.popular-locationBtn {
+  background-color: #ffff;
+  border: 1px solid lightgray;
+  font-weight: bold;
+}
