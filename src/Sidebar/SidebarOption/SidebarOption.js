@@ -13,7 +13,7 @@ function SidebarOption({ icon, category, bgColor }) {
         >
           {icon}
         </i>
-        <p className="category-text fw-bold ms-2 mt-3 text-capitalize text-dark">
+        <p className="category-text fw-bold ms-2 mt-3 text-capitalize">
           {category}
         </p>
       </div>

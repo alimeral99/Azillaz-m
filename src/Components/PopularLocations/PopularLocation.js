@@ -1,9 +1,6 @@
 import React, { useRef } from "react";
 import "./PopularLocations.css";
 import Slider from "react-slick";
-import { GrFormPreviousLink } from "react-icons/gr";
-
-import { GrFormNextLink } from "react-icons/gr";
 
 function PopularLocation() {
   const sliderRef = useRef(null);
@@ -56,12 +53,6 @@ function PopularLocation() {
           </Slider>
         }
       </div>
-      <button className="prev">
-        <GrFormPreviousLink className="icons" />
-      </button>
-      <button className="next">
-        <GrFormNextLink className="icons" />
-      </button>
     </div>
   );
 }

@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import logo from "./navbar-logo.png";
 import LocationModal from "./LocationModal/LocationModal";
 import { IoSearch } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
+import { IoMdPerson } from "react-icons/io";
+import { FaComment } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { IoIosNotifications } from "react-icons/io";
 
 import "./Navbar.css";
 
@@ -18,23 +23,34 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h1>Logo</h1>
-
-      <div className="search-container">
-        <input type="text" />
-        <button type="button">
-          <IoSearch className="icons" />
-        </button>
-      </div>
-
-      <div className="modal-container" onClick={openModal}>
-        <GrLocation className="icons" />
+      <div className="navbar-logoContainer">
+        <img src={logo} className="navbar-logo" alt="My Image" />
       </div>
 
       <LocationModal showModal={showModal} closeModal={closeModal} />
 
+      <form>
+        <div className="search-box">
+          <input type="text" />
+          <IoSearch className="search-box-icon" />
+        </div>
+        <GrLocation className="navbar-location-icon" onClick={openModal} />
+      </form>
+
       <div className="navbar-right">
-        <button className="register-loginBtn">Giriş ve Kayıt OL</button>
+        {/* <div className="navbar-right-icons">
+          <IoMdPerson />
+          <FaComment />
+          <FaHeart />
+          <IoIosNotifications />
+        </div>
+
+        <button>acil ilan ver</button> */}
+        <div className="navbar-rightLinks">
+          <a href="#">Giriş Yap</a>
+          <span>|</span>
+          <a href="#">Hesap aç</a>
+        </div>
         <button> + İlan ver</button>
       </div>
     </nav>

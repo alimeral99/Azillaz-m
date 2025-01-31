@@ -12,6 +12,8 @@ import Ads from "./Components/Ads/Ads";
 import cardData from "./data/cardData";
 import PopularLocation from "./Components/PopularLocations/PopularLocation";
 import CardCategory from "./Components/CardCategory/CardCategory";
+import AcilLinks from "./Components/AcilLinks/AcilLinks";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
           cardCategoryData={cardData}
         />
       </div>
+      <AcilLinks />
+      <Footer />
     </div>
   );
 }

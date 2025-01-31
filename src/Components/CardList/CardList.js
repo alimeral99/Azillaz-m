@@ -5,8 +5,8 @@ import Card from "./Card/Card";
 
 function CardList() {
   return (
-    <div className="">
-      <h3 className="fw-bold">Recommendations for you</h3>
+    <div className="cardlist">
+      <h3 className="fw-bold">Öne çıkanlar</h3>
       <div className="d-flex flex-wrap ">
         {cardData.map((card) => (
           <div className="g-1">
@@ -15,6 +15,9 @@ function CardList() {
               title={card.title}
               price={card.price}
               categories={card.categories}
+              city={card.city}
+              acilIlan={card.acilIlan}
+              yeniIlan={card.yeniIlan}
               image={card.img}
             />
           </div>

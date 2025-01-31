@@ -4,6 +4,8 @@ const cardData = [
     title: "Amazing Villa For Sale",
     categories: "Real Estate",
     price: "$5000",
+    acilIlan: true,
+    city: "adana",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/1-1-q0w9fymet6prygmdvus8tiwm9itajexsih14p3wmtc.jpg",
   },
   {
@@ -11,6 +13,8 @@ const cardData = [
     title: "Red Classic Car",
     categories: "Vehicles Classic Cars",
     price: "$80000",
+    yeniIlan: true,
+    city: "çanakkale",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/11-1-q0vvsc3a9nptkoqhmuhw732h5fz3mi7ul5fni2uf7k.jpg",
   },
 
@@ -19,6 +23,7 @@ const cardData = [
     title: "Iphone 14 Pro Max",
     categories: "Apple Mobile Phones",
     price: "$950",
+    city: "edirne",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/6-3-q0w4ivszasb4r1u5wb8g37khiblyg5y7i0m3yign0g.jpg",
   },
   {
@@ -26,6 +31,7 @@ const cardData = [
     title: "Nike Fancy Shoes",
     categories: "Shoes Fashion",
     price: "$1500",
+    city: "trabzon",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/nike-q0w59q32gh1wa6ul5wwxafqc6fba90i9uv99aynxc0.jpg",
   },
   {
@@ -33,6 +39,7 @@ const cardData = [
     title: "Best 4K Drone",
     categories: "Electronics",
     price: "3500",
+    city: "ankara",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/dron-q0w67fkpjl72mrvxbzga7fif2v65a9bqtph3v6oo74.jpg",
   },
   {
@@ -40,6 +47,7 @@ const cardData = [
     title: "Wood Table For Sale",
     categories: "Furniture",
     price: "$900",
+    city: "istanbul",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/t3-1-q0w7hgq68i7l7b0tjdrjtbc2d6a98n2itjm4y0flhc.jpg",
   },
   {
@@ -47,6 +55,7 @@ const cardData = [
     title: "Computer Table For Sale",
     categories: "Furniture",
     price: "$6000",
+    city: "izmir",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/t1-1-q0w7heuhuu50k33jucyaobt56ejit8v25ab5zgidts.jpg",
   },
   {
@@ -54,6 +63,7 @@ const cardData = [
     title: "Fancy Lamps For Sale",
     categories: "Furniture",
     price: "5000",
+    city: "antalya",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/6-1-q0w908rkix75t7gbo26u4hp4nkabtmjdooatsj7mv4.jpg",
   },
   {
@@ -61,6 +71,7 @@ const cardData = [
     title: "Fancy Lamps For Sale",
     categories: "Furniture",
     price: "5000",
+    city: "eskişehir",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/6-1-q0w908rkix75t7gbo26u4hp4nkabtmjdooatsj7mv4.jpg",
   },
   {
@@ -68,6 +79,7 @@ const cardData = [
     title: "Double Bed Set",
     categories: "Beds   Furniture ",
     price: "$2200",
+    city: "bursa",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/bad-q0w7h89mizw0atd3ws3wovgx0pfybd4xsdqrmis51c.jpg",
   },
   {
@@ -75,6 +87,7 @@ const cardData = [
     title: "Villa For Sale",
     categories: "Real Estate   For rent  ",
     price: "$800",
+    city: "trabzon",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/21-q0vvqqr4orjbwh1rxnpngzjcwxtpkyw819n1877fr4.jpg",
   },
   {
@@ -82,6 +95,7 @@ const cardData = [
     title: "House For Sale",
     categories: "Real Estate",
     price: " $85000",
+    city: "adıyaman",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/jho-q0w1yi7zmxunqo0rbdqe1irnt2xbz17vgsi81jfiio.jpg",
   },
   {
@@ -89,6 +103,7 @@ const cardData = [
     title: "Sofa Cam Bed",
     categories: "Sofas   Furniture",
     price: "6000",
+    city: "kocaeli",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/10-3-q0w909pepr8g4teyiklgozgl8y5p1bn40syb9t68ow.jpg",
   },
   {
@@ -96,6 +111,7 @@ const cardData = [
     title: "Fancy Sofa Set",
     categories: "Sofas   Furniture  ",
     price: "$600",
+    city: "muğla",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/sofa1-q0w7hcyth62fwv6a5c51jca7zmssdunlh1070wl668.jpg",
   },
   {
@@ -103,6 +119,7 @@ const cardData = [
     title: "Office Chair For Sale",
     categories: "Furniture",
     price: "$200",
+    city: "trabzon",
     img: "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/elementor/thumbs/c2-q0w7hb353hzv9n90gbbsecrasv21ygg4srp82cnyio.jpg",
   },
 ];

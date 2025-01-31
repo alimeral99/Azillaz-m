@@ -2,7 +2,7 @@ import React from "react";
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption/SidebarOption";
 
-import { FaRegStar } from "react-icons/fa";
+import { FaHandshakeSimple } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaCar } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -18,7 +18,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarOption
-        icon={<FaRegStar />}
+        icon={<FaHandshakeSimple />}
         bgColor={"#7BAB47"}
         category={"hizmet"}
       />

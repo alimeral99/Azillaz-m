@@ -1,0 +1,17 @@
+.acil-links {
+  color: #004e7f;
+  padding: 5px 10px;
+}
+
+.acil-linksContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.acil-links .links-group {
+  text-align: center;
+  font-size: 28px;
+  text-transform: capitalize;
+}
