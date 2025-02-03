@@ -1,6 +1,5 @@
 .acil-links {
-  color: #004e7f;
-  padding: 5px 10px;
+  padding: 15px 10px;
 }
 
 .acil-linksContainer {
@@ -12,6 +11,33 @@
 
 .acil-links .links-group {
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #ffffff;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 25px;
   text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 10px;
+}
+
+.links-group .icon-container {
+  background-color: #e8f0fe;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.links-group p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: gray;
+}
+
+.acil-links .links-group .icon-container {
+  color: #3674b5;
 }

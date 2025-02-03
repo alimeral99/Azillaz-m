@@ -1,6 +1,24 @@
 .card {
   position: relative;
+  width: 186px;
   height: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body h6 {
+  font-size: 13px;
 }
 
 .apacilIlan-box {
@@ -54,7 +72,7 @@
   object-fit: cover;
   z-index: 2;
   position: absolute;
-  top: 90px;
-  right: 5%;
+  top: 70px;
+  right: 2%;
   transform: translateX(-20%);
 }

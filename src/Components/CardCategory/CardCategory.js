@@ -17,6 +17,10 @@ function CardCategory({ cardCategoryData, cardCategoryText }) {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: true,
+    swipe: true,
+    draggable: true,
+    touchMove: true,
   };
 
   const nextSlide = () => {

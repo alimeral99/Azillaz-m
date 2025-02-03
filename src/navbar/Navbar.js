@@ -32,8 +32,11 @@ function Navbar() {
       <form>
         <div className="search-box">
           <input type="text" />
-          <IoSearch className="search-box-icon" />
+          <div className="navbar-iconContainer">
+            <IoSearch className="search-box-icon" />
+          </div>
         </div>
+
         <GrLocation className="navbar-location-icon" onClick={openModal} />
       </form>
 

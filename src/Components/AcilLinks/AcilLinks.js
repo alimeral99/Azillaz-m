@@ -9,21 +9,39 @@ function AcilLinks() {
   return (
     <div className="acil-links">
       <div className="acil-linksContainer">
-        <div className="links-group">
-          <FaExclamation />
-          <p>Acillazımsa</p>
+        <div className="links-groupContainer">
+          <div className="links-group">
+            <div className="icon-container">
+              <FaExclamation />
+            </div>
+            <p>Acillazımsa</p>
+          </div>
         </div>
-        <div className="links-group">
-          <LiaHandPointer />
-          <p>Gir ilana</p>
+
+        <div className="links-groupContainer">
+          <div className="links-group">
+            <div className="icon-container">
+              <LiaHandPointer />
+            </div>
+            <p>Gir ilana</p>
+          </div>
         </div>
-        <div className="links-group">
-          <FaPeopleArrows />
-          <p>görüş satıcıyla</p>
+        <div className="links-groupContainer">
+          <div className="links-group">
+            <div className="icon-container">
+              <FaPeopleArrows />
+            </div>
+            <p>görüş satıcıyla</p>
+          </div>
         </div>
-        <div className="links-group">
-          <FaHandshake />
-          <p>hallet işini</p>
+
+        <div className="links-groupContainer">
+          <div className="links-group">
+            <div className="icon-container">
+              <FaHandshake />
+            </div>
+            <p>hallet işini</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,48 +1,76 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button, Form } from "react-bootstrap";
 import "./LocationModal.css";
 
-function LocationModal({ showModal, closeModal }) {
-  const [selectedOption, setSelectedOption] = useState("");
+const cityData = {
+  Türkiye: ["İstanbul", "Ankara", "İzmir"],
+  Almanya: ["Berlin", "Münih", "Hamburg"],
+  Fransa: ["Paris", "Lyon", "Marsilya"],
+};
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
+function LocationModal({ showModal, closeModal }) {
+  const [selectedCountry, setSelectedCountry] = useState("Türkiye");
+  const [selectedCity, setSelectedCity] = useState("");
+
+  const handleCountryChange = (e) => {
+    setSelectedCountry(e.target.value);
+    setSelectedCity("");
+  };
+
+  const handleCityChange = (e) => {
+    setSelectedCity(e.target.value);
   };
 
   return (
-    <div className="location-modal">
-      <div className={`modal ${showModal ? "show" : ""}`}>
-        <div className="modal-content">
-          <div className="modal-header">
-            <h5 className="modal-title">Konum Seçin</h5>
-            <button type="button" className="close" onClick={closeModal}>
-              ×
-            </button>
-          </div>
-          <div className="locationmodal-body">
-            <h1>Bir il seçin</h1>
-            <select id="options" value={selectedOption} onChange={handleChange}>
-              <option value="" disabled hidden>
-                Seçiniz
-              </option>
-              <option value="istanbul">İstanbul</option>
-              <option value="ankara">Ankara</option>
-              <option value="izmir">İzmir</option>
-              <option value="bursa">Bursa</option>
-            </select>
+    <div className="d-flex justify-content-center align-items-center ">
+      <Modal
+        backdropClassName="custom-backdrop"
+        show={showModal}
+        onHide={closeModal}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Konum Seçin</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3">
+              <Form.Label>İl Seçin</Form.Label>
+              <Form.Select
+                value={selectedCountry}
+                onChange={handleCountryChange}
+              >
+                {Object.keys(cityData).map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
+              </Form.Select>
+            </Form.Group>
 
-            <p>Seçilen Seçenek: {selectedOption}</p>
-          </div>
-
-          <div className="locationmodal-body">
-            <h1>Bir ilçe seçin</h1>
-            <select id="options" value={selectedOption} onChange={handleChange}>
-              <option value="" disabled hidden>
-                test
-              </option>
-            </select>
-          </div>
-        </div>
-      </div>
+            <Form.Group>
+              <Form.Label>İlçe Seçin</Form.Label>
+              <Form.Select value={selectedCity} onChange={handleCityChange}>
+                <option value="">İlçe Seçiniz</option>
+                {cityData[selectedCountry].map((city) => (
+                  <option key={city} value={city}>
+                    {city}
+                  </option>
+                ))}
+              </Form.Select>
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            Kapat
+          </Button>
+          <Button variant="primary" onClick={closeModal}>
+            Kaydet
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
