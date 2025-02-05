@@ -23,16 +23,7 @@ function App() {
         <div className="app-bodyContainer">
           <div className="app-bodyLeft">
             <Sidebar />
-            <Ads
-              img={
-                "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/2023/05/BANxER-11.jpg"
-              }
-            />
-            <Ads
-              img={
-                "https://classiads.designinvento.net/elementor/classiads-flow/wp-content/uploads/2023/05/04-1.jpg"
-              }
-            />
+            <Ads />
           </div>
 
           <div className="app-bodyRight">

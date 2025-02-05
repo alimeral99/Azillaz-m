@@ -24,6 +24,8 @@ function Category() {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
+    draggable: true,
+    swipeToSlide: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
   };

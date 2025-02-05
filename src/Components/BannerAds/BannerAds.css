@@ -11,58 +11,19 @@
 
 .slider-container {
   width: 100%;
+  height: 100%;
 }
 
 .slider-container .slick-slide {
   width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
 .slider-container .banner-img {
   width: 100%;
-  object-fit: cover;
-  background-position: center;
+  height: 100%;
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
-}
-.bannerads-content {
-  position: absolute;
-  top: 45%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.bannerads-content .bannerads-header {
-  color: #eed341;
-  font-weight: bolder;
-}
-
-.bannerads-content .bannerads-text {
-  font-size: 35px;
-  font-weight: bolder;
-}
-
-.bannerads-links {
-  display: flex;
-  align-items: center;
-}
-
-.link-group {
-  display: flex;
-  justify-content: space-between;
-  width: 550px;
-}
-
-.link-group > a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
-
-.link-group > a:hover {
-  color: #eed341;
 }

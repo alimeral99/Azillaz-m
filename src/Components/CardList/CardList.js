@@ -6,7 +6,10 @@ import Card from "./Card/Card";
 function CardList() {
   return (
     <div className="cardlist">
-      <h3 className="fw-bold">Öne çıkanlar</h3>
+      <div className="cardlist-header">
+        <h3 className="fw-bold">Öne çıkanlar</h3>
+        <button>Vitrin İlanları</button>
+      </div>
       <div className="d-flex flex-wrap ">
         {cardData.map((card) => (
           <div className="g-1">

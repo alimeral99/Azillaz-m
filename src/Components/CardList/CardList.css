@@ -6,3 +6,17 @@
   color: #ffa500;
   text-transform: capitalize;
 }
+
+.cardlist-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  padding: 5px 10px;
+}
+
+.cardlist-header button {
+  background: none;
+  border: 1px solid lightgray;
+  padding: 5px 15px;
+  color: gray;
+}

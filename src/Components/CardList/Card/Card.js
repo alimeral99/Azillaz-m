@@ -20,7 +20,6 @@ function Card({ title, price, image, categories, city, acilIlan, yeniIlan }) {
 
         <h6 className="card-text text-muted ">{city}</h6>
       </div>
-
       <div className="card-buttonGroup">
         <button className="card-btn fw-bold">{price} ₺</button>{" "}
         <FaRegHeart className="favoriteIcon" />

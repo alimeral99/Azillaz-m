@@ -11,7 +11,6 @@ function CardCategory({ cardCategoryData, cardCategoryText }) {
   const sliderRef = useRef(null);
 
   const settings = {
-    infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -19,7 +18,6 @@ function CardCategory({ cardCategoryData, cardCategoryText }) {
     autoplaySpeed: 2000,
     arrows: true,
     swipe: true,
-    draggable: true,
     touchMove: true,
   };
 
