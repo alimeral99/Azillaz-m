@@ -1,8 +1,9 @@
 .card {
   position: relative;
   width: 186px !important;
-  height: 203px;
+  height: 200px;
   cursor: pointer;
+  border: 1px solid lightgray;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

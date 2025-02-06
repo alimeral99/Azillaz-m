@@ -31,6 +31,8 @@ function PopularLocation() {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
+    draggable: true,
+    swipeToSlide: true,
     pauseOnHover: true,
     arrows: false,
     cssEase: "linear",

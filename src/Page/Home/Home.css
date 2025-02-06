@@ -1,0 +1,18 @@
+.home {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.home-body {
+  display: flex;
+}
+
+.home-left {
+  width: 20%;
+}
+
+.home-right {
+  width: 1060px;
+  margin: 10px 0;
+  margin-left: 25px;
+}
