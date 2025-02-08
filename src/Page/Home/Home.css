@@ -5,6 +5,7 @@
 
 .home-body {
   display: flex;
+  margin-top: 15px;
 }
 
 .home-left {
@@ -13,6 +14,5 @@
 
 .home-right {
   width: 1060px;
-  margin: 10px 0;
   margin-left: 25px;
 }

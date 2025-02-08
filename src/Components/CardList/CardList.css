@@ -10,6 +10,7 @@
 .cardlist-header {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   width: 1000px;
   padding: 5px 10px;
 }

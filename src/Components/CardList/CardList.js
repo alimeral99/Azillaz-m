@@ -10,7 +10,7 @@ function CardList() {
         <h3 className="fw-bold">Öne çıkanlar</h3>
         <button>Vitrin İlanları</button>
       </div>
-      <div className="d-flex flex-wrap ">
+      <div className="d-flex justify-content-center  flex-wrap ">
         {cardData.map((card) => (
           <div className="g-1">
             <Card
@@ -21,6 +21,7 @@ function CardList() {
               city={card.city}
               acilIlan={card.acilIlan}
               yeniIlan={card.yeniIlan}
+              jetIlan={card.jetIlan}
               image={card.img}
             />
           </div>

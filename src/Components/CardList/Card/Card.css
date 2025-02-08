@@ -59,6 +59,18 @@
   position: absolute;
   color: white;
 }
+.jetIlan-box {
+  position: absolute;
+  font-size: 10px;
+  z-index: 2;
+  top: 3px;
+  left: 3px;
+  background-color: #5b9cd6;
+  padding: 3px;
+  border-radius: 5px;
+  position: absolute;
+  color: white;
+}
 
 .card-buttonGroup {
   display: flex;

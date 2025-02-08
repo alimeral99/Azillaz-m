@@ -2,7 +2,16 @@ import React from "react";
 import "./Card.css";
 import { FaRegHeart } from "react-icons/fa";
 
-function Card({ title, price, image, categories, city, acilIlan, yeniIlan }) {
+function Card({
+  title,
+  price,
+  image,
+  categories,
+  city,
+  acilIlan,
+  yeniIlan,
+  jetIlan,
+}) {
   return (
     <div className="card m-2" style={{ width: "12rem" }}>
       <img src={image} className="card-img-top card-img" alt="..." />
@@ -13,6 +22,7 @@ function Card({ title, price, image, categories, city, acilIlan, yeniIlan }) {
       />
       {acilIlan && <span className="apacilIlan-box">Apacil İlan</span>}
       {yeniIlan && <span className="yeniIlan-box">yeni İlan</span>}
+      {jetIlan && <span className="jetIlan-box">jet İlan</span>}
 
       <div className="card-body">
         <h6 className="text-muted text-capitalize ">{categories}</h6>

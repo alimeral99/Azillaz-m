@@ -25,7 +25,7 @@ function LocationModal({ showModal, closeModal }) {
   return (
     <div className="d-flex justify-content-center align-items-center ">
       <Modal
-        style={{ marginTop: "-40px" }}
+        style={{ marginTop: "-90px" }}
         backdropClassName="custom-backdrop"
         show={showModal}
         onHide={closeModal}
