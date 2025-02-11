@@ -1,5 +1,5 @@
 .home {
-  max-width: 1300px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -15,4 +15,54 @@
 .home-right {
   width: 1060px;
   margin-left: 25px;
+}
+
+@media (max-width: 1270px) {
+  .home-right {
+    width: 1000px;
+  }
+
+  .home-left {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .home-right {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .home-right {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .home-right {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-right {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .home-right {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .home-right {
+    width: 250px;
+  }
+
+  .home-left {
+    width: 30%;
+  }
 }

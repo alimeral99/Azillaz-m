@@ -19,6 +19,36 @@ function CardCategory({ cardCategoryData, cardCategoryText }) {
     arrows: true,
     swipe: true,
     touchMove: true,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1033,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 823,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const nextSlide = () => {

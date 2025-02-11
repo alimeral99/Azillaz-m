@@ -22,3 +22,15 @@
   background-color: #ffa500;
   color: white;
 }
+
+@media screen and (max-width: 1300px) {
+  .categories {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .categories {
+    width: 90%;
+  }
+}

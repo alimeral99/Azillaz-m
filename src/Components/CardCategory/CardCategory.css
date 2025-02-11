@@ -9,8 +9,13 @@
   color: #efb036;
 }
 
+.custom-slider {
+  width: 100%;
+}
+
 .custom-slider-wrapper {
-  width: 1300px;
+  width: 100%;
+  position: relative;
   padding: 5px;
   height: 350px;
   margin: 0 auto;

@@ -1,5 +1,6 @@
 .cardlist {
   margin-top: 10px;
+  width: 100%;
 }
 
 .cardlist h3 {
@@ -20,4 +21,41 @@
   border: 1px solid lightgray;
   padding: 5px 15px;
   color: gray;
+}
+
+@media (max-width: 1270px) {
+  .cardList-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cardlist-header {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .cardlist-header {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .cardlist-header {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cardlist-header {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .cardlist-header {
+    width: 200px;
+  }
 }

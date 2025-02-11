@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.app-body {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 .app-bodyContainer {
   display: flex;
 }

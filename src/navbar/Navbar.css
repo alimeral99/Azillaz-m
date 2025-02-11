@@ -1,16 +1,16 @@
 .navbar {
   background-color: #004d7f;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px;
+  padding: 15px 5px;
   position: relative;
 }
 
 .navbar-logoContainer {
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -120,4 +120,103 @@
 .navbar-right > .register-loginBtn:hover {
   background-color: #f0f0f0;
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar form {
+    margin-left: 170px;
+    width: 45%;
+  }
+
+  .navbar-logoContainer {
+    width: 140px; /* Slightly smaller for this breakpoint */
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar form {
+    margin-left: 120px;
+    width: 42%;
+  }
+
+  .navbar-logoContainer {
+    width: 100px;
+  }
+
+  .navbar-logo {
+    height: 200px;
+  }
+
+  .navbar-right .navbar-right-icons {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-logoContainer {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .navbar-logo {
+    height: 200px;
+  }
+
+  .navbar form {
+    margin-left: 0;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-rightLinks {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-right .navbar-right-icons {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+  }
+
+  .navbar-right button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar form .search-box {
+    width: 100%;
+  }
+
+  .navbar form .navbar-location-icon {
+    margin-left: 5px;
+  }
+
+  .navbar-rightLinks {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-rightLinks span {
+    display: none;
+  }
 }

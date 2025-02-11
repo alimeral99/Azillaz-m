@@ -79,9 +79,9 @@
   padding: 5px 15px;
 }
 
-.card-buttonGroup > .favoriteIcon {
-  font-size: 20px;
-  cursor: pointer;
+.card-buttonGroup > .icon-btn {
+  border: none;
+  background: none;
 }
 .card-btn {
   border: none;

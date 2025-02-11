@@ -1,12 +1,13 @@
 import React from "react";
 import adsImg from "./ads-img.jpeg";
+import ilanverImg from "./ilanver.jpeg";
 import "./Ads.css";
 
-function Ads({ img }) {
+function Ads() {
   return (
     <div className="ads">
       <img src={adsImg} alt="ads-img" />
-      <button>Ücretsiz İlan Ver</button>
+      <img src={ilanverImg}></img>
     </div>
   );
 }

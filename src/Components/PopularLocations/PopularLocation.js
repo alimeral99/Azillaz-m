@@ -36,12 +36,21 @@ function PopularLocation() {
     pauseOnHover: true,
     arrows: false,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 867,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="mt-2 popular-location">
       <div className="popular-locationContainer">
-        <h1 className="popular-locationText">Popular Location</h1>
+        <h1 className="popular-locationText">Popüler Lokasyonlar</h1>
 
         {
           <Slider {...settings} ref={sliderRef}>
