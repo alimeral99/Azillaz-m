@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./CardList.css";
 import cardData from "./cardData";
 import Card from "./Card/Card";
@@ -10,7 +10,7 @@ function CardList() {
         <h3 className="fw-bold">Öne çıkanlar</h3>
         <button>Vitrin İlanları</button>
       </div>
-      <div className="d-flex justify-content-center flex-wrap cardList-container">
+      <div className="d-flex flex-wrap cardList-container">
         {cardData.map((card) => (
           <Card
             title={card.title}

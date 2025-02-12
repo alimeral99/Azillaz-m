@@ -1,6 +1,6 @@
 .cardlist {
   margin-top: 10px;
-  width: 100%;
+  overflow: hidden;
 }
 
 .cardlist h3 {
@@ -11,8 +11,6 @@
 .cardlist-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 1000px;
   padding: 5px 10px;
 }
 
@@ -21,41 +19,24 @@
   border: 1px solid lightgray;
   padding: 5px 15px;
   color: gray;
+  width: fit-content;
 }
 
-@media (max-width: 1270px) {
-  .cardList-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
+@media (max-width: 1281px) {
   .cardlist-header {
-    width: 800px;
+    width: 810px;
   }
 }
 
-@media screen and (max-width: 1115px) {
+@media (max-width: 1071px) {
   .cardlist-header {
     width: 600px;
   }
 }
 
-@media screen and (max-width: 905px) {
-  .cardlist-header {
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 730px) {
+@media (max-width: 870px) {
   .cardlist-header {
     display: flex;
     flex-direction: column;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 592px) {
-  .cardlist-header {
-    width: 200px;
   }
 }
