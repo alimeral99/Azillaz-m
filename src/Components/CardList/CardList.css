@@ -40,3 +40,28 @@
     flex-direction: column;
   }
 }
+
+.cardList-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 680px) {
+  .cardList-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox için */
+    -ms-overflow-style: none; /* IE ve Edge için */
+    padding-bottom: 15px; /* Kaydırma çubuğu için boşluk */
+  }
+
+  .cardList-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari ve Opera için */
+  }
+
+  /* Kartların mobilde yan yana dizilmesi için */
+  .cardList-container > * {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+}

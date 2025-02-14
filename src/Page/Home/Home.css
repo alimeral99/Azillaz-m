@@ -78,8 +78,3 @@
     width: 610px;
   }
 }
-@media (max-width: 667px) {
-  .home-right {
-    width: 440px;
-  }
-}

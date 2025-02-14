@@ -4,6 +4,18 @@
   gap: 1rem;
 }
 
+.ads-content {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 680px) {
+  .ads {
+    flex: 0 0 190px;
+    margin-right: 10px;
+  }
+}
+
 .ads img {
   width: 100%;
   border-radius: 8px;

@@ -8,7 +8,7 @@ function SidebarOption({ icon, category, bgColor }) {
     <div className="sidebar-options d-flex align-items-center p-2  border-bottom-0">
       <div className="sidebar-option d-flex align-items-center position-realtive">
         <i
-          className="icon d-flex align-items-center justify-content-center rounded-circle text-white"
+          className="icon d-flex align-items-center justify-content-center text-white"
           style={{ backgroundColor: bgColor }}
         >
           {icon}

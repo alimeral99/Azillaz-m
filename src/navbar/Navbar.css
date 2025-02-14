@@ -48,17 +48,17 @@
 }
 
 .navbar form .search-box input {
-  width: 92%;
+  width: 90%;
   background: none;
   outline: none;
   border: none;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 .navbar form .navbar-iconContainer {
   background-color: #ffa500;
   color: white;
-  width: 8%;
+  width: 10%;
   cursor: pointer;
   padding: 5px;
   height: 100%;
@@ -115,7 +115,7 @@
 
 .navbar-right button {
   margin-right: 10px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: none;
   font-weight: bold;
   cursor: pointer;

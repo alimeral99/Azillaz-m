@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Card.css";
 import { FaRegHeart } from "react-icons/fa";
+import adsImg from "../../Ads/ads-img.jpeg";
+import ilanverImg from "../../Ads/ilanver.jpeg";
 
 function Card({
   title,
@@ -12,8 +14,33 @@ function Card({
   acilIlan,
   yeniIlan,
   jetIlan,
+  isAd,
 }) {
   const [isFilled, setIsFilled] = useState(false);
+
+  if (isAd === "ads") {
+    return (
+      <div className="card m-2" style={{ width: "12rem", height: "200px" }}>
+        <img
+          src={adsImg}
+          className="card-img-top card-img"
+          alt="reklam"
+          style={{ height: "100%", objectFit: "cover" }}
+        />
+      </div>
+    );
+  } else if (isAd === "ilanver") {
+    return (
+      <div className="card m-2" style={{ width: "12rem", height: "200px" }}>
+        <img
+          src={ilanverImg}
+          className="card-img-top card-img"
+          alt="ilan ver"
+          style={{ height: "100%", objectFit: "cover" }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="card m-2" style={{ width: "12rem" }}>
