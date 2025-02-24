@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import Navbar from "./navbar/Navbar";
 import Home from "./Page/Home/Home";
+import CategoryContent from "./Page/CategoryContent/CategoryContent";
 import Footer from "./Components/Footer/Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -17,6 +18,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="/categorycontent/:category"
+            element={<CategoryContent />}
+          />
         </Routes>
         <Footer />{" "}
       </Router>

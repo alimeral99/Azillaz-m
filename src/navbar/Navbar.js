@@ -45,23 +45,23 @@ function Navbar() {
           isMobileMenuOpen ? "mobile-menu-open" : ""
         }`}
       >
-      <form>
-        <div className="search-box">
+        <form>
+          <div className="search-box">
             <input type="text" placeholder="Ne aramıştınız?" />
-          <div className="navbar-iconContainer">
-            <IoSearch className="search-box-icon" />
+            <div className="navbar-iconContainer">
+              <IoSearch className="search-box-icon" />
+            </div>
           </div>
-        </div>
 
-        <GrLocation className="navbar-location-icon" onClick={openModal} />
-      </form>
+          <GrLocation className="navbar-location-icon" onClick={openModal} />
+        </form>
 
-      <div className="navbar-right">
-        <div className="navbar-rightLinks">
-          <a href="#">Giriş Yap</a>
-          <span>|</span>
-          <a href="#">Hesap aç</a>
-        </div>
+        <div className="navbar-right">
+          <div className="navbar-rightLinks">
+            <a href="#">Giriş Yap</a>
+            <span>|</span>
+            <a href="#">Hesap aç</a>
+          </div>
           <button className="post-ad-button"> + İlan ver</button>
         </div>
       </div>
